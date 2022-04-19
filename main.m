@@ -7,7 +7,7 @@ addpath([pwd '\Algorithms']);
 nloop=10;%%%%%%%%%%%%%%%%%%%%%%%%%%%%%100;      % Number of generations
 nsol=100;       % Population size
 narchive=nsol;  % Pareto archive size
-Nrun=1;        % Number of runs per algorithm per problem
+Nrun=30;        % Number of runs per algorithm per problem
 %%%%%%%%%%%%%%
 
 algo={  'MOBA';
@@ -39,7 +39,7 @@ for k=1:numel(fobj) %%%% benchmark
     a=zeros(nvari,1);
     b=ones(nvari,1);
        
-    for i=1%:numel(algo)  %%%% algorithm
+    for i=1:numel(algo)  %%%% algorithm
         filename=['rst_' num2str(k,'%03.f') '_' num2str(i,'%03.f') '.mat'];
         for j=1:Nrun     %%%%   optimization run
             RR=[k i j]
