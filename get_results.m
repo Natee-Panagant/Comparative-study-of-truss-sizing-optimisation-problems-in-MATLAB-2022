@@ -1,0 +1,13 @@
+    rst=struct();
+    rst.node=node;
+    rst.ele=ele;
+    rst.L=L;
+    rst.A=A;
+    rst.E=E;
+    rst.sigma_a=sigma_a;
+    rst.Load=Load;
+    rst.BC=BC;
+    rst.mass=mass;
+    rst.compliance=compliance;
+    rst.stress=stress;
+    rst.displm=displm;
